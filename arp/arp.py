@@ -36,8 +36,8 @@ def restore(target_ip, spoof_ip):
 # обозначим счетсчик
 count = 0
 # обозанчем переменные которые будут отвечать за ip 
-target_ip = "192.168.18.155"
-spoof_ip =  "192.168.18.1"
+target_ip = "172.18.0.2"
+spoof_ip =  "172.18.0.1"
 # сделаем перебор ошибки
 try:
     # запустим цилк
@@ -57,3 +57,4 @@ except KeyboardInterrupt:
     print("You exit and restore ARP")
     restore(target_ip, spoof_ip)
     restore(spoof_ip, target_ip )
+

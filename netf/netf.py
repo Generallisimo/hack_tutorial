@@ -41,5 +41,5 @@ def  proccess_packet(packet):
 #переменная для пакетов 
 queue = netfilterqueue.NetfilterQueue()
 # перебор пакетов в 0 где обозначали хранение
-queue.bind(0, proccess_packet)
+queue.bind(1, proccess_packet)
 queue.run()
